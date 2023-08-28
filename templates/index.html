@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./stylesheet.css" rel="stylesheet">
+    <title>Calculator</title>
+    <style>
+        html{
+    text-align: center;
+    background-color: black;
+    color: aliceblue;
+}
+label{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.in{
+    width: 150px;
+    height: 20px;
+    border-radius: 15px;
+    border: solid cyan ;
+    margin: 10px;
+}
+    </style>
+</head>
+<body>
+    <h1>Calculator Using Flask</h1>
+    <form action="/result" method="post" target="_blank">
+        <label>First Number</label><br>
+        <input type="number" class="in" placeholder="Number 1" name="a"><br>
+        <label>Sencond Number</label><br>
+        <input type="number" class="in" placeholder="Number 2" name="b"><br>
+        <select name="operation">
+            <option value="add">Add</option>
+            <option value="subtract">Sub</option>
+            <option value="multiply">Div</option>
+            <option value="divide">Mul</option>
+        </select>
+        <input type="submit" value="Calculate">
+    </form>
+</body>
+</html>
